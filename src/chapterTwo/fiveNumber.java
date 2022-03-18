@@ -1,24 +1,25 @@
 package chapterTwo;
 
 import java.util.Scanner;
-    public class fiveNumber{
-    public static void main (String [] args){
+
+public class fiveNumber {
+public static void main (String [] args){
 Scanner input = new Scanner (System.in);
 
 System.out.print ("Enter first integer: ");
-    int Number1 = input.nextInt();
+int Number1 = input.nextInt();
 
 System.out.print ("Enter second integer: ");
-    int Number2 = input.nextInt ();
+int Number2 = input.nextInt ();
 
 System.out.print ("Enter third integer: ");
-    int Number3 = input.nextInt ();
+int Number3 = input.nextInt ();
 
 System.out.print ("Enter forth integer: ");
-    int Number4 = input.nextInt ();
+int Number4 = input.nextInt ();
 
 System.out.print ("Enter fifth integer: ");
-    int Number5 = input.nextInt ();
+int Number5 = input.nextInt ();
 
 if (Number1>Number2 && Number1>Number3 && Number1>Number4 && Number1>Number5){
 System.out.println ("the biggest number is:" + Number1);

@@ -1,7 +1,7 @@
 package tddClass;
 
 public class AirConditioner {
-private int temperature =16;
+private final int temperature =16;
 
     public boolean isOn(boolean status) {
         return true;

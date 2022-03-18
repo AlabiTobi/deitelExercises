@@ -7,14 +7,12 @@ public class TelevisionTest {
         Television tV = new Television();
         assertEquals(false, tV.getPowerOn());
         tV.powerOn();
-        ;
         assertEquals(true, tV.getPowerOn());
     }
     @Test
     public void TelevisionOff() {
         Television tV = new Television();
         tV.powerOn();
-        ;
         assertEquals(true, tV.getPowerOn());
         tV.powerOn();
         assertEquals(false, tV.getPowerOn());
@@ -23,7 +21,6 @@ public class TelevisionTest {
     public void TelevisionChannelUp() {
         Television tV = new Television();
         tV.powerOn();
-        ;
         assertEquals(true, tV.getPowerOn());
         tV.channelUp(7);
         assertEquals(8, tV.getChannelUp());
@@ -32,7 +29,6 @@ public class TelevisionTest {
     public void TelevisionChannelDown() {
         Television tV = new Television();
         tV.powerOn();
-        ;
         assertEquals(true, tV.getPowerOn());
         tV.channelDown(16);
         assertEquals(15, tV.getChannelDown());
@@ -41,7 +37,6 @@ public class TelevisionTest {
     public void TelevisionVolumeUp() {
         Television tV = new Television();
         tV.powerOn();
-        ;
         assertEquals(true, tV.getPowerOn());
         tV.volumeUp(15);
         assertEquals(16, tV.getVolumelUp());

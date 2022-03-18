@@ -1,20 +1,36 @@
 package tddClass;
 
 public class Account {
+    private final String ACCOUNT_NUMBER;
+    private String accountName;
     private int balance;
+    private final String pin;
 
-    public void deposit(int amount) {
-        if (amount < 0) balance = 0;
+    public Account (String accountNumber, String firstName, String lastName, String pin) {
+        ACCOUNT_NUMBER = accountNumber;
+        accountName = firstName + " " + lastName;
+        this.pin = (pin);
+    }
+
+    public void deposit (int amount) {
         balance = amount + balance;
 
     }
-    public int getBalance() {
-        return balance;
+    public String getAccountName(){
+        return accountName;
+    }
+    public int getAccountBalance (String pin) {
+        if (pin.equals (this.pin)) return balance;
+        return 0;
+    }
+    public void withdraw (int amount) {
+        if (pin.equals (this.pin))
+            balance -= amount;
+        }
+    public String getAccountNumber () {
+        return ACCOUNT_NUMBER;
     }
 
-    public void withdraw(int withdrew){
-        if (balance > withdrew){balance = balance - withdrew;}
-    }
 }
 
    
