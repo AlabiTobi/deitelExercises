@@ -1,6 +1,6 @@
 package chapterTwo;
 
-public class Native{
+public class Native {
 
     private String name;
     private int scvId;

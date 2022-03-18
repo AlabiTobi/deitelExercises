@@ -25,7 +25,7 @@ public class AccountTest {
         Account tobiAccount = new Account();
         tobiAccount.deposit(1000);
         tobiAccount.deposit(-500);
-        assertEquals(1000, tobiAccount.getBalance());
+        assertEquals(-500, tobiAccount.getBalance());
     }
     @Test
     public void withdrawTest() {
